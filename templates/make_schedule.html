@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>New Schedule</h1>
+        </div>
+         <div class="row">
+	  <div class="col-md-6">
+		<form class="form-horizontal" role="form" action="/new" method="POST">
+		  <div class="form-group">
+		    <label class="col-lg-3 control-label">单词列表</label>
+		    <div class="col-lg-8">
+ 		      <input type="hidden" name="wordlist" value="words.txt">
+		      <p class="form-control-static">考研单词 (5494)</p>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword" class="col-lg-3 control-label">区间</label>
+		    <div class="col-lg-8">
+		      <input type="text" class="form-control" id="inputPassword" name="range" value="0-5494">
+		    </div>
+		  </div>
+	 	  <div class="form-group">
+		    <label for="inputPassword" class="col-lg-3 control-label">每日新词数量</label>
+		    <div class="col-lg-8">
+		      <input type="text" class="form-control" name="daily" id="inputPassword" value="30">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-lg-offset-3 col-lg-8">
+		      <div class="checkbox">
+			<label>
+			  <input type="checkbox" name="random" value="1" checked> 打乱顺序
+			</label>
+		      </div>
+		    </div>
+		  </div>
+		   <div class="form-group">
+		    <div class="col-lg-offset-3 col-lg-8">
+		      <button type="submit" class="btn btn-default">创建</button>
+		    </div>
+		  </div>
+		</form>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
